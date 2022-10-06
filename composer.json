@@ -1,0 +1,22 @@
+{
+    "name": "workplacebuddy/debug-token-bundle",
+    "description": "Show debug token in stdout response for local usage when requests made from bot framework emulator",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WorkplaceBuddy\\DebugToken\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yura Rodchyn",
+            "email": "rodchyn+buddy@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-kernel": "~5.4|~6.1",
+        "symfony/dependency-injection": "~5.4|~6.1",
+        "symfony/config": "~5.4|~6.1"
+    }
+}

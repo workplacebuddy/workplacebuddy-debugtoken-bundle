@@ -1,0 +1,9 @@
+services:
+  WorkplaceBuddy\DebugToken\EventListener\KernelTerminateListener:
+    arguments: ['@logger', '%guidiance_server_host%']
+    tags:
+      - {
+        name: kernel.event_listener,
+        event: kernel.terminate,
+        method: onKernelTerminate,
+      }
